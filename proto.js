@@ -1,4 +1,4 @@
-const dataUrl = 'proto.data';
+const dataUrl = 'proto.json';
 
 const pageTitle = document.getElementById('pageTitle');
 const pageDescription = document.getElementById('pageDescription');
