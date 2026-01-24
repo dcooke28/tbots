@@ -23,6 +23,7 @@ async function loadData() {
   }
 
   const data = await response.json();
+  const itemId = getItemIdFromQuery();
 
   if (!itemId) {
     // display standard page
