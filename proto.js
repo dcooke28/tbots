@@ -1,10 +1,10 @@
-const dataUrl = 'proto.json';
+const dataUrl = 'https://dcooke28.github.io/tbots/proto.json';
 
 const pageTitle = document.getElementById('pageTitle');
 const pageDescription = document.getElementById('pageDescription');
 
 function displayItemPage(data, id) {
-  data.items.find(i => i.id == id);
+  const item = data.find(i => i.id == id);
 
   pageTitle.textContent = item.name;
   pageDescription.textContent = item.description;
