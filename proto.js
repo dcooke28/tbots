@@ -7,7 +7,7 @@ function displayItemPage(data, id) {
   data.items.find(i => i.id == id);
 
   pageTitle.textContent = item.name;
-  pageDescription.textContent = item.description
+  pageDescription.textContent = item.description;
 }
 
 function getItemIdFromQuery() {
