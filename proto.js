@@ -21,7 +21,8 @@ function displayItemPage(data, id) {
   itemShovelTestNumber.textContent = item.shovel_test_number;
   itemUtm.textContent = item.utm;
   itemStratumBaseDepth.textContent = item.stratum_base_depth;
-  photo.textContent = item.photo;
+
+  photo.src = item.photo;
 }
 
 function getItemIdFromQuery() {
