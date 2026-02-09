@@ -2,16 +2,34 @@
   {
     "id": 1,
     "name": "Item one",
-    "description": "Item one desc"
+    "details": "Item one desc",
+    "site_number": "Item one site number",
+    "transect": "Item one transect",
+    "shovel_test_number": "Item one shovel test number",
+    "utm": "Item on utm",
+    "stratum_base_depth": "Item one stratum base depth",
+    "photo": "Item one photo"
   },
   {
     "id": 2,
     "name": "Item two",
-    "description": "Item two desc"
+    "details": "Item two desc",
+    "site_number": "Item two site number",
+    "transect": "Item two transect",
+    "shovel_test_number": "Item two shovel test number",
+    "utm": "Item on utm",
+    "stratum_base_depth": "Item two stratum base depth",
+    "photo": "Item two photo"
   },
   {
     "id": 3,
     "name": "Item three",
-    "description": "Item three desc"
+    "details": "Item three desc",
+    "site_number": "Item three site number",
+    "transect": "Item three transect",
+    "shovel_test_number": "Item three shovel test number",
+    "utm": "Item on utm",
+    "stratum_base_depth": "Item three stratum base depth",
+    "photo": "Item three photo"
   }
 ]
