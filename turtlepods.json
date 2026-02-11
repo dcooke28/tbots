@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Archaeological Site A",
+    "description": "This is a detailed description of the first archaeological site. It contains information about the location, historical significance, and findings at this site.",
+    "site number": "SITE-001",
+    "transect": "T-01",
+    "shovel test number": "ST-001",
+    "depth": "0-30 cm"
+  },
+  {
+    "id": 2,
+    "name": "Archaeological Site B",
+    "description": "The second site shows evidence of early settlement with pottery fragments and stone tools discovered in various layers.",
+    "site number": "SITE-002",
+    "transect": "T-02",
+    "shovel test number": "ST-002",
+    "depth": "15-45 cm"
+  },
+  {
+    "id": 3,
+    "name": "Archaeological Site C",
+    "description": "Site C represents a different cultural period with unique artifact patterns and soil composition.",
+    "site number": "SITE-003",
+    "transect": "T-03",
+    "shovel test number": "ST-003",
+    "depth": "30-60 cm"
+  }
+]
