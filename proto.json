@@ -1,35 +1,29 @@
 [
   {
     "id": 1,
-    "name": "Item one",
-    "details": "Item one desc",
-    "site_number": "Item one site number",
-    "transect": "Item one transect",
-    "shovel_test_number": "Item one shovel test number",
-    "utm": "Item on utm",
-    "stratum_base_depth": "Item one stratum base depth",
-    "photo": "Item one photo"
+    "name": "Archaeological Site A",
+    "description": "This is a detailed description of the first archaeological site. It contains information about the location, historical significance, and findings at this site.",
+    "site number": "SITE-001",
+    "transect": "T-01",
+    "shovel test number": "ST-001",
+    "depth": "0-30 cm"
   },
   {
     "id": 2,
-    "name": "Item two2",
-    "details": "Item two desc",
-    "site_number": "Item two site number",
-    "transect": "Item two transect",
-    "shovel_test_number": "Item two shovel test number",
-    "utm": "Item on utm",
-    "stratum_base_depth": "Item two stratum base depth",
-    "photo": "Item two photo"
+    "name": "Archaeological Site B",
+    "description": "The second site shows evidence of early settlement with pottery fragments and stone tools discovered in various layers.",
+    "site number": "SITE-002",
+    "transect": "T-02",
+    "shovel test number": "ST-002",
+    "depth": "15-45 cm"
   },
   {
     "id": 3,
-    "name": "Item three",
-    "details": "Item three desc",
-    "site_number": "Item three site number",
-    "transect": "Item three transect",
-    "shovel_test_number": "Item three shovel test number",
-    "utm": "Item on utm",
-    "stratum_base_depth": "Item three stratum base depth",
-    "photo": "test.jpg"
+    "name": "Archaeological Site C",
+    "description": "Site C represents a different cultural period with unique artifact patterns and soil composition.",
+    "site number": "SITE-003",
+    "transect": "T-03",
+    "shovel test number": "ST-003",
+    "depth": "30-60 cm"
   }
 ]

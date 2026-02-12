@@ -3,34 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Viewer</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Turtlebots Artifact Catalogue</title>
+    <link rel="stylesheet" href="turtlepods.css">
 </head>
 <body>
+    <header>
+        <button class="nav-button" id="prevBtn" aria-label="Previous">←</button>
+        <h1 class="header-title">Artifact Catalogue</h1>
+        <button class="nav-button" id="nextBtn" aria-label="Next">→</button>
+    </header>
+
     <main id="content">
         <div class="loading">Loading data...</div>
-        <h1 id="dataName"></h1>
+        <h2 id="dataName"></h2>
         <div class="description" id="dataDescription"></div>
-        <dl class="details">
-            <dt>Site Number</dt>
-            <dd id="dataSiteNumber"></dd>
-            <dt>Transect</dt>
-            <dd id="dataTransect"></dd>
-            <dt>Shovel Test Number</dt>
-            <dd id="dataShovelTestNumber"></dd>
-            <dt>Depth</dt>
-            <dd id="dataDepth"></dd>
-        </dl>
+        <div class="content-wrapper">
+            <div class="content-left">
+                <dl class="details">
+                    <dt>Site Number</dt>
+                    <dd id="dataSiteNumber"></dd>
+                    <dt>Transect</dt>
+                    <dd id="dataTransect"></dd>
+                    <dt>Shovel Test Number</dt>
+                    <dd id="dataShovelTestNumber"></dd>
+                    <dt>Depth</dt>
+                    <dd id="dataDepth"></dd>
+                </dl>
+            </div>
+            <div class="content-right">
+                <img id="artifactImage" class="artifact-image" alt="Artifact">
+            </div>
+        </div>
     </main>
 
-    <footer>
-        <button class="nav-button" id="prevBtn" aria-label="Previous">←</button>
-        <div class="nav-info">
-            <span id="currentId">-</span> / <span id="totalCount">-</span>
-        </div>
-        <button class="nav-button" id="nextBtn" aria-label="Next">→</button>
-    </footer>
+    <div class="nav-info">
+        <span id="currentId">-</span> / <span id="totalCount">-</span>
+    </div>
 
-    <script src="script.js"></script>
+    <script src="turtlepods.js"></script>
 </body>
 </html>

@@ -1,5 +1,6 @@
 // Configuration
-const DATA_FILE = 'data.json'; // Path to your JSON file
+const DATA_FILE = 'https://dcooke28.github.io/tbots/turtlepods.json'; // Path to your JSON file
+const IMAGES_DIR = 'imgs'; // Directory containing images
 let allData = [];
 let currentId = 1;
 
@@ -69,6 +70,17 @@ function displayData(id) {
     document.getElementById('dataShovelTestNumber').textContent = data['shovel test number'] || '';
     document.getElementById('dataDepth').textContent = data.depth || '';
 
+    // Load the artifact image
+    const imageElement = document.getElementById('artifactImage');
+    const imagePath = `${IMAGES_DIR}/${id}.jpg`;
+    imageElement.src = imagePath;
+    imageElement.alt = `Artifact ${id}`;
+    imageElement.onerror = () => {
+        imageElement.classList.add('placeholder');
+        imageElement.style.display = 'flex';
+        imageElement.textContent = 'No image available';
+    };
+
     // Update navigation info
     document.getElementById('currentId').textContent = id;
     document.getElementById('totalCount').textContent = allData.length;
@@ -105,16 +117,6 @@ document.getElementById('nextBtn').addEventListener('click', () => {
     }
 });
 
-// Keyboard navigation
-document.addEventListener('keydown', (event) => {
-    if (event.key === 'ArrowLeft' && currentId > 1) {
-        displayData(currentId - 1);
-        updateNavigation();
-    } else if (event.key === 'ArrowRight' && currentId < allData.length) {
-        displayData(currentId + 1);
-        updateNavigation();
-    }
-});
 
 // Start the application
 init();

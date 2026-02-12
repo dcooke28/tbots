@@ -12,6 +12,23 @@ body {
     flex-direction: column;
 }
 
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+    font-size: 1.8em;
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
 main {
     flex: 1;
     max-width: 900px;
@@ -23,7 +40,7 @@ main {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
+h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #333;
@@ -44,6 +61,21 @@ h1 {
     word-wrap: break-word;
 }
 
+.content-wrapper {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.content-left {
+    flex: 1;
+    min-width: 0;
+}
+
+.content-right {
+    flex-shrink: 0;
+}
+
 .details {
     margin-bottom: 40px;
 }
@@ -61,6 +93,26 @@ h1 {
     margin-bottom: 8px;
 }
 
+.artifact-image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.artifact-image.placeholder {
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 20px;
+}
+
 .error-message {
     background-color: #fee;
     color: #c33;
@@ -75,16 +127,6 @@ h1 {
     padding: 40px;
     color: #999;
     font-size: 1.1em;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: auto;
 }
 
 .nav-button {
@@ -113,18 +155,38 @@ footer {
 
 .nav-info {
     text-align: center;
-    flex: 1;
+    padding: 20px;
     font-size: 0.9em;
-    color: #aaa;
+    color: #666;
+    background-color: white;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .content-right {
+        flex-shrink: 1;
+    }
+
+    .artifact-image {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 600px) {
-    h1 {
+    h2 {
         font-size: 1.8em;
     }
 
     main {
         padding: 20px 15px;
+    }
+
+    .header-title {
+        font-size: 1.3em;
     }
 
     .nav-button {
@@ -135,5 +197,13 @@ footer {
 
     .nav-info {
         font-size: 0.8em;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .artifact-image {
+        max-width: 100%;
     }
 }
