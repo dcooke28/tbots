@@ -63,12 +63,13 @@ function displayData(id) {
     window.history.replaceState({}, '', `?id=${id}`);
 
     // Populate the HTML elements
-    document.getElementById('dataName').textContent = data.name || '';
+    //document.getElementById('dataName').textContent = data.name || '';
     document.getElementById('dataDescription').textContent = data.description || '';
     document.getElementById('dataSiteNumber').textContent = data['site number'] || '';
     document.getElementById('dataTransect').textContent = data.transect || '';
     document.getElementById('dataShovelTestNumber').textContent = data['shovel test number'] || '';
     document.getElementById('dataDepth').textContent = data.depth || '';
+    document.getElementById('dataUtm').textContent = data.utm || '';
 
     // Load the artifact image
     const imageElement = document.getElementById('artifactImage');
